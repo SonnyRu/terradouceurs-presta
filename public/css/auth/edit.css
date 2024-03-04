@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Folty';
+    src: url('../../font/Folty-Medium.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+body, html {
+    font-family: 'Folty', sans-serif !important; 
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border: 2px solid #C22B54 !important;
+    box-shadow: none !important;
+
+}
+
+.save {
+    background-color: #C22B54 !important;
+}
+
+.save:hover {
+    background-color: #AE4260 !important;
+}
+
+.input-mdp {
+    position: relative;
+}
+
+#togglePassword,
+#update_password_toggle {
+    position: absolute;
+    right: 0.625rem; /* 10px -> 0.625rem */
+    top: 70%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

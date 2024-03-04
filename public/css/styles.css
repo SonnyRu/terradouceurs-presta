@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Folty';
+    src: url('../font/Folty-Medium.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+body, html {
+    font-family: 'Folty', sans-serif !important; 
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS pour le menu de navigation */
+/* Logo */
+header img {
+    max-width: 20vw;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ligne de séparation */
+hr {
+    border: none;
+    height: 0.5px;
+    background-color: rgba(218, 218, 218, 0.2);
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Menu de navigation */
+.menu-navigation {
+    text-align: center;
+}
+
+.menu-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.menu-navigation li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu-navigation a {
+    font-size: 17px;
+    line-height: 1.4;
+    text-decoration: none !important;
+    color: #C22B54;
+}
+
+.menu-navigation a:hover,
+.menu-navigation a:active {
+    color: #AE4260;
+}
+
+.menu-navigation a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #AE4260;
+    transition: width 0.3s ease; /* Transition pour l'effet de glissement */
+}
+
+.menu-navigation a:hover::before {
+    width: 100%; /* Largeur à 100% au survol */
+}
+
+/* CSS pour les boutons d'authentification */
+.auth {
+    float: right;
+    margin-top: -1.5rem;
+    margin-right: 2rem !important;
+}
+
+.auth a {
+    margin-left: 0.5rem;
+    text-decoration: none !important;
+    color: #C22B54;
+}
+
+.auth a:hover {
+    color: 
+    #AE4260;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Carousel */
+
+.carousel-section {
+    width: 100%;
+    overflow: hidden; /* Pour cacher les parties de l'image qui dépassent */
+    margin-top: 1rem;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden; /* Pour cacher les parties de l'image qui dépassent */
+    position: relative;
+    max-width: 1200px;
+    height: 600px;
+    margin: 0 auto; /* Centrer horizontalement le carrousel */
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pour s'assurer que l'image couvre entièrement le conteneur */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-left: -8.4rem; /* Ajoutez la marge souhaitée entre les boutons */
+    margin-right: -8.4rem; /* Ajoutez la marge souhaitée entre les boutons */
+}
+
+
+/* Styles pour les écrans PC */
+@media only screen and (min-width: 1200px) {
+    .carousel-container {
+        width: 1200px; /* Largeur fixe pour les écrans PC */
+        margin: 0 auto; /* Centrer le carrousel */
+    }
+}
+
+/* Styles pour les écrans de bureau plus larges */
+@media only screen and (min-width: 1800px) {
+    .carousel-container {
+        max-width: 3000px; /* Limite maximale de 3000px pour les écrans de bureau plus larges */
+        width: auto; /* Laissez la largeur s'adapter à la taille de l'écran */
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 3000px) {
+    .carousel-section, .carousel-container, .carousel-slide {
+        max-width: 3000px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-section, .carousel-container, .carousel-slide {
+        max-width: 480px;
+        height: auto; /* Pour s'adapter à la hauteur de l'image */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style pour la première section */
+.travail_a_facon {
+    padding: 3.125rem 0;
+}
+
+/* Style pour la colonne contenant l'image */
+.travail_a_facon .image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style pour la colonne contenant le texte */
+.travail_a_facon .texte {
+    padding-left: 2rem;
+}
+
+.travail_a_facon h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.travail_a_facon hr {
+    width: 3.125rem;
+    border: 0.125rem solid #C22B54; 
+    margin-top: 0.625rem; 
+    margin-bottom: 1.25rem; 
+    margin-left: 0; 
+}
+
+
+
+
+
+
+
+
+
+
+/* Style pour la première section */
+.fabrique_a_lyon {
+    padding: 3.125rem 0;
+    background-color: rgba(226, 226, 226, 0.63);
+}
+
+/* Style pour la colonne contenant le logo */
+.fabrique_a_lyon .logo img {
+    max-width: 100%; 
+    margin-left: -5rem;
+    height: auto;
+    display: block;
+}
+
+/* Style pour les colonnes contenant du texte */
+.fabrique_a_lyon .objectif,
+.fabrique_a_lyon .autres_points {
+    padding-left: 2rem; 
+}
+
+.fabrique_a_lyon h2 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.fabrique_a_lyon hr {
+    width: 3.125rem;
+    border: 0.125rem solid #C22B54; 
+    margin-top: 0.625rem;
+    margin-bottom: 1.25rem; 
+    margin-left: 0; 
+}
+
+
+
+
+
+/* Style pour la première section */
+.co-financeurs {
+    padding: 5rem 0; 
+    text-align: center;
+}
+
+.co-financeurs .logo-cof {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: -8.6rem;
+}
+
+.co-financeurs .logo {
+    padding-right: 5rem;
+}
+
+.co-financeurs .logo img {
+    width: 12rem;
+    height: auto;
+    display: block;
+}
+
+.co-financeurs h2 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.co-financeurs hr {
+    width: 10rem;
+    border: 0.125rem solid #C22B54;
+    margin-top: 0.625rem; 
+    margin-bottom: 1.25rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+
+/* Style pour la première section */
+.partenaires {
+    padding: 5rem 0; 
+    text-align: center;
+}
+
+.partenaires .logo-part {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -5rem;
+}
+
+.partenaires .logo {
+    padding-right: 5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.partenaires .logo img {
+    width: 15rem;
+    height: auto;
+    display: block;
+}
+
+.partenaires h2 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+}
+
+.partenaires hr {
+    width: 10rem;
+    border: 0.125rem solid #C22B54;
+    margin-top: 0.625rem; 
+    margin-bottom: 1.25rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+footer {
+    padding: 1rem 0; /* Ajoute un espace en haut et en bas du footer */
+    text-align: center; /* Centre le texte */
+    background-color: #F7FAFC; /* Couleur de fond du footer */
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.08);
+    line-height: 3;
+}
+
+footer p {
+    margin: 0; /* Supprime les marges autour du texte */
+    color: #000; /* Couleur du texte */
+}

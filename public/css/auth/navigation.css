@@ -1,0 +1,85 @@
+
+.logo-container {
+    max-width: 20vw;
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 20vw;
+    display: block;
+    margin: 0 auto;
+}
+  
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgba(173, 173, 173, 0.2);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alignement vertical */
+}
+
+.menu-navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.menu-navigation li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu-navigation .nav-li {
+    font-size: 20px;
+    line-height: 1.4;
+    text-decoration: none !important;
+    color: #C22B54;
+}
+
+.menu-navigation .nav-li:hover,
+.menu-navigation .nav-li:active {
+    color: #AE4260;
+}
+
+.menu-navigation .nav-li::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #AE4260;
+    transition: width 0.3s ease; /* Transition pour l'effet de glissement */
+}
+
+.menu-navigation .nav-li:hover::before {
+    width: 100%; /* Largeur à 100% au survol */
+}
+
+
+/* Style pour les boutons dans le menu de navigation */
+.profil-menu button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px !important;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #C22B54;
+}
+
+.profil-menu button:hover,
+.profil-menu button:focus {
+    color: #AE4260;
+}
+
+
