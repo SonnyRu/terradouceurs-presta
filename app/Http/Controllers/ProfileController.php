@@ -22,7 +22,7 @@ class ProfileController extends Controller
         // Déchiffrer les données
         $user->name = decrypt($user->name);
         $user->first_name = decrypt($user->first_name);
-        $user->email = $user->email;
+        $user->email = decrypt($user->email);
         $user->phone_number = decrypt($user->phone_number);
         $user->exploitation_name = decrypt($user->exploitation_name);
         $user->siret_number = decrypt($user->siret_number);
